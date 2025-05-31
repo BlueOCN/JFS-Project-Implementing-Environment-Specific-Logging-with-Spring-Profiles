@@ -40,6 +40,9 @@ Thumbs.db
 # Spring Boot-specific
 .env
 application.properties
+application-dev.properties
+application-test.properties
+application-prod.properties
 application.yml
 application-local.properties
 application-local.yml
