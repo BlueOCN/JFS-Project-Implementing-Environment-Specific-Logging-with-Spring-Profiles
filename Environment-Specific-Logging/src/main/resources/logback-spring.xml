@@ -24,8 +24,15 @@
     </appender>
 
     <!-- Development & Test Profile: Console Logging -->
-    <springProfile name="dev,test">
+    <springProfile name="dev">
         <logger name="com.bigocn.Environment_Specific_Logging.controller" level="DEBUG"/>
+        <root level="INFO">
+            <appender-ref ref="CONSOLE"/>
+        </root>
+    </springProfile>
+
+    <springProfile name="test">
+        <logger name="com.bigocn.Environment_Specific_Logging.controller" level="INFO"/>
         <root level="INFO">
             <appender-ref ref="CONSOLE"/>
         </root>
